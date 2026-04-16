@@ -1,0 +1,43 @@
+{
+  "name": "parkey-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.0",
+    "@tanstack/react-query": "^5.59.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "react-scripts": "5.0.1",
+    "viem": "^2.21.0",
+    "wagmi": "^2.12.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "sync-abi": "node -e \"require('fs').copyFileSync('../parkey-contracts/exports/ParkeyNFT.json','src/contracts/ParkeyNFT.json')\""
+  },
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"],
+    "globals": {
+      "BigInt": "readonly"
+    }
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {},
+  "overrides": {
+    "openapi-fetch": "0.13.5"
+  },
+  "resolutions": {
+    "openapi-fetch": "0.13.5"
+  }
+}
