@@ -26,5 +26,9 @@
     "mocha": "^11.7.5",
     "tsx": "^4.20.0",
     "typescript": "~5.8.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-keystore": "^3.0.6",
+    "dotenv": "^17.4.2"
   }
 }
