@@ -3,3 +3,6 @@ build
 .env
 .env.local
 src/contracts/ParkeyNFT.json
+
+.vercel
+.env*.local
